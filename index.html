@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab14 - Tienda opciones pedido</title>
+</head>
+
+<body>
+    <h1>pizza/SLASH</h1>
+    <h2>🍕 TU PIZZA EN SU PUNTO 🍕</h2>
+    <form action="" method="POST">
+        <div>
+            <label for="tratamiento"></label>
+            <select name="tratamiento" id="tratamiento" required>
+                <option value="" disabled selected>Seleccione</option>
+                <option value="sr">Sr.</option>
+                <option value="sra">Sra.</option>
+                <option value="otre">Otre</option>
+            </select>
+        </div>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" required>
+        </div>
+        <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Introduce tu teléfono" required>
+        </div>
+
+        <div>
+            <label for="pizza-tipo">PIZZA</label>
+            <select name="pizza-tipo" id="pizza-tipo">
+                <option value="" disabled selected>Selecciona una pizza</option>
+                <option value="Margarita">Margarita</option>
+                <option value="Peperoni">Peperoni</option>
+                <option value="Cuatro quesos">Cuatro quesos</option>
+                <option value="Hawaiana">Hawaiana</option>
+                <option value="Barbacoa">Barbacoa</option>
+                <option value="Vegetariana">Vegetariana</option>
+            </select>
+        </div>
+        <div>
+            <label>Extras</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="extras[]" value="accion">Piña</label>
+                </label>
+                <label>
+                    <input type="checkbox" name="extras[]" value="comedia">Queso</label>
+                </label>
+                <label>
+                    <input type="checkbox" name="extras[]" value="terror">Masa gruesa</label>
+                </label>
+                <label>
+                    <input type="checkbox" name="extras[]" value="ciencia-ficción">Champiñones</label>
+                </label>
+            </div>
+        </div>
+        <div>
+            <label for="comentarios">Comentario del cliente</label>
+            <textarea name="comentarios" id="comentarios" rows="4" placeholder="Alergias, cubiertos..."></textarea>
+        </div>
+        <button type="submit" formnovalidate>Enviar formulario</button>
+        <button type="reset">Limpiar formulario</button>
+    </form>
+</body>
+
+</html>
